@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:typed_data';
 import 'package:firebase_database/firebase_database.dart';
 
-import 'package:flash_chat/screens/user_screens/develop.dart';
+import 'package:flash_chat/screens/user_screens/pivacy%20policy.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -177,7 +177,7 @@ icon: BitmapDescriptor.fromBytes(imageData)
       ),
 
       drawer:Container(
-        width: 195,
+        width: 150,
          child:Drawer(
           child: ListView(
             padding: EdgeInsets.zero,
@@ -188,16 +188,33 @@ icon: BitmapDescriptor.fromBytes(imageData)
             ),
            CircleAvatar(
               radius: 70,
-             backgroundColor: Colors.grey,   
+             //backgroundColor: Colors.grey,   
             child:Image.asset('images/user.png',),),
             Divider(color: Colors.black, height: 20.0,),
             SizedBox(
              width: 20.0,
             height: 30.0,
             ),
+            ListTile(
+                leading: Icon(Icons.view_day),
+                title: new Text("Shedule",
+                 style: TextStyle(
+                          
+                          fontFamily: 'times-new-roman',
+                          
+                        ), 
+                ),
+                onTap: () {
+                  Navigator.of(context).pushNamed(CardStudent.id);
+                  }
+                ),
+                SizedBox(
+             
+            height: 10.0,
+            ),
           ListTile(
-                leading: Icon(Icons.person),
-                title: new Text("DevelopedBy",
+                leading: Icon(Icons.privacy_tip),
+                title: new Text("Privacy Policy",
                  style: TextStyle(
                           
                           fontFamily: 'times-new-roman',
@@ -213,21 +230,19 @@ icon: BitmapDescriptor.fromBytes(imageData)
             height: 10.0,
             ),
           ListTile(
-                leading: Icon(Icons.view_day),
-                title: new Text("Shedule",
+                leading: Icon(Icons.privacy_tip),
+                title: new Text("Contact Us",
                  style: TextStyle(
                           
                           fontFamily: 'times-new-roman',
                           
-                        ), 
+                        ),
                 ),
                 onTap: () {
-                  Navigator.of(context).pushNamed(CardStudent.id);
+                  Navigator.of(context).pushNamed(DevelopedBy.id);
                   }
-                ),
-          
-            
-
+                ), 
+      
         ],
       )
       ),

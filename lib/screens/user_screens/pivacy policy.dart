@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 /// This Widget is the main application widget.
 class DevelopedBy extends StatelessWidget {
-  static const String _title = 'Developed By';
+  static const String _title = 'Privacy Policy';
   static const String id = 'Developed_By';
 
   @override
@@ -44,81 +44,34 @@ class MyStatelessWidget extends StatelessWidget {
             height: 30.0,
             
                 ),
-          Card(
+          
+         Card(
         margin: EdgeInsets.fromLTRB(20, 6, 20, 0),
         child:ListTile(
-          leading:CircleAvatar(
-            radius:25,
-            backgroundColor: Colors.white12,
-            backgroundImage: AssetImage("images/dev.png"
-            
-            ), 
-            ),
-             title:Text('Shehan Prasanna',style: TextStyle( fontFamily: 'times-new-roman'),),
-             subtitle:Text('Developer   ',style: TextStyle( fontFamily: 'times-new-roman'),) ,
-             isThreeLine: true,
+             
+             subtitle:Text('My Location ("us", "we", or "our") operates the website and the Buses Sri Lanka mobile application (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. Our Privacy Policy for Busses Sri Lanka is managed through Free Privacy Policy. We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.    ',
+             style: TextStyle( fontFamily: 'times-new-roman',),textAlign: TextAlign.center) ,
+             
         
 
         )
 
         ),
-        SizedBox(
-            width: 20.0,
-            height: 30.0,
-            
-                ),
+        Card(
+        margin: EdgeInsets.fromLTRB(20, 6, 20, 0),
+        child:ListTile(
+          
+             title:Text('Effective date: January 18, 2021',style: TextStyle( fontFamily: 'times-new-roman'),textAlign: TextAlign.center,),
              
-         Card(
-        margin: EdgeInsets.fromLTRB(20, 6, 20, 0),
-        child:ListTile(
-          leading:CircleAvatar(
-            radius:25,
-            backgroundColor: Colors.white12,
-            backgroundImage: AssetImage("images/dev.png"
-            
-            ), 
-            ),
-             title:Text('Binura Owin',style: TextStyle( fontFamily: 'times-new-roman'),),
-             subtitle:Text('Developer   ',style: TextStyle( fontFamily: 'times-new-roman'),) ,
-             isThreeLine: true,
+             
+             
         
 
         )
-      ),
-     SizedBox(
-            width: 20.0,
-            height: 30.0,
-            
-                ),
-        
-       Card(
-        margin: EdgeInsets.fromLTRB(20, 6, 20, 0),
-        child:ListTile(
-          leading:CircleAvatar(
-            radius:25,
-            backgroundColor: Colors.white12,
-            backgroundImage: AssetImage("images/dev.png"
-            
-            ), 
-            ),
-             title:Text('Anjana Lakshan',style: TextStyle( fontFamily: 'times-new-roman'),),
-             subtitle:Text(' UI/UX Developer   ',style: TextStyle( fontFamily: 'times-new-roman'),) ,
-             isThreeLine: true,
-        
 
-        )
-      ),
-         
-       ],
-       
-       
+        ),
+       ], 
      );
-     
-      
-      
-      
-    
-
   }
   
 }
