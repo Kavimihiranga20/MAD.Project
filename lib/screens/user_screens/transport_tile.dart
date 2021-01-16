@@ -14,14 +14,16 @@ class TransportTile extends StatelessWidget{
       child:Card(
         margin: EdgeInsets.fromLTRB(20, 6, 20, 0),
         child:ListTile(
-          leading:CircleAvatar(
+          leading:Icon(Icons.bus_alert,size: 56.0),
+          /*CircleAvatar(
+            
             radius:25,
             backgroundColor: Colors.white12,
             backgroundImage: AssetImage("images/bus.png"
             
             ),
             
-            ),
+            ),*/
           trailing:Text(transport.busName,style: TextStyle( fontFamily: 'times-new-roman'),),
           title:Text(transport.arivalTime,style: TextStyle( fontFamily: 'times-new-roman'),),
           /*  isThreeLine: true, */
