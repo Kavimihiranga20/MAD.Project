@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:typed_data';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flash_chat/screens/user_screens/contact_us.dart';
 
 import 'package:flash_chat/screens/user_screens/pivacy%20policy.dart';
 import 'package:flutter/material.dart';
@@ -196,7 +197,7 @@ icon: BitmapDescriptor.fromBytes(imageData)
             height: 30.0,
             ),
             ListTile(
-                leading: Icon(Icons.view_day),
+                leading: Icon(Icons.calendar_today),
                 title: new Text("Shedule",
                  style: TextStyle(
                           
@@ -230,7 +231,7 @@ icon: BitmapDescriptor.fromBytes(imageData)
             height: 10.0,
             ),
           ListTile(
-                leading: Icon(Icons.privacy_tip),
+                leading: Icon(Icons.contact_mail),
                 title: new Text("Contact Us",
                  style: TextStyle(
                           
@@ -239,7 +240,7 @@ icon: BitmapDescriptor.fromBytes(imageData)
                         ),
                 ),
                 onTap: () {
-                  Navigator.of(context).pushNamed(DevelopedBy.id);
+                  Navigator.of(context).pushNamed(Contactus.id);
                   }
                 ), 
       
